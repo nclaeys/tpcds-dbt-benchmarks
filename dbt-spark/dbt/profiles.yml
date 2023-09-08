@@ -1,0 +1,13 @@
+default:
+  outputs:
+    dev:
+      type: spark
+      method: session
+      schema: dbt_spark_tpcds_100
+      host: NA
+    local:
+      type: duckdb
+      path: /tmp/dbt.duckdb
+      schema: dbt
+      threads: 1
+  target: dev

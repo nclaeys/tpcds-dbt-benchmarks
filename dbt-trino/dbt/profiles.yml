@@ -1,0 +1,11 @@
+default:
+  outputs:
+    trino:
+      type: trino
+      host: trino.trino
+      database: glue
+      schema: datafy_dp_tpcds_100
+      port: 8080
+      user: trino
+      method: none
+  target: trino
